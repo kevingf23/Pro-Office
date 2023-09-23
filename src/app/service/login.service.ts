@@ -8,7 +8,7 @@ import { JwtHelperService, JwtModule } from "@auth0/angular-jwt";
   providedIn: 'root'
 })
 export class LoginService {
-  private url: string = `${environment.KEYCLOACK}/realms/pro-office/protocol/openid-connect/token`
+  private url: string = `${environment.KEYCLOACK}/realms/mediapp/protocol/openid-connect/token`
 
   constructor(
     private http: HttpClient, //[para hacer peticion]
@@ -16,7 +16,7 @@ export class LoginService {
   ) { }
 
   login(username: string, password: string){
-    const body = `client_id=pro-office-backend&grant_type=password&username=${username}&password=${password}`;
+    const body = `client_id=mediapp-backend&grant_type=password&username=${username}&password=${password}`;
 
     return this.http.post<any>(this.url, body, {
       headers: new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8')

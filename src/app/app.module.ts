@@ -20,6 +20,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { environment } from 'src/environments/environment';
 import { JwtModule } from "@auth0/angular-jwt";
+import { SalarioComponent } from './salario/salario.component';
 
 export function tokenGetter() {
   //return sessionStorage.getItem(environment.TOKEN_NAME);
@@ -29,7 +30,8 @@ export function tokenGetter() {
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    SalarioComponent
 
   ],
   imports: [
