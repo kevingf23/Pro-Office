@@ -3,7 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  HOST: 'http://localhost:8585',
+  KEYCLOACK: 'http://localhost:9595',
+  TOKEN_AUTH_USERNAME: 'admin',
+  TOKEN_AUTH_PASSWORD: 'Negocios$$2023',
+  REFRESH_TOKEN: 'refresh_token',
+  CLIENT_ID: 'pro-office-backend',
+  TOKEN_NAME: 'access_token',
 };
 
 /*
