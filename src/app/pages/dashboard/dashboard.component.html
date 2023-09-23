@@ -1,2 +1,4 @@
 <h1>Ingrese su salario</h1>
-<p>Salario: </p><input type="number">
+<p>Salario: </p><input type="number" (keyup)="pressKey($event)">
+<p>Salario base: {{salario}}</p>
+<p>Descuento de renta: {{renta}} </p>

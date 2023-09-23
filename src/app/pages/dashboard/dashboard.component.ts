@@ -10,6 +10,8 @@ import { environment } from 'src/environments/environment';
 export class DashboardComponent implements OnInit {
 
   username: string;
+  salario: number = 0
+  renta: number = 0
 
   constructor() { }
 
@@ -20,5 +22,17 @@ export class DashboardComponent implements OnInit {
     let token = sessionStorage.getItem(environment.TOKEN_NAME);
 
   }
+
+  pressKey(miVariable: any) {
+    console.log("test")
+    this.salario =+miVariable.target.value
+
+    if (this.salario >= 0.01) {
+
+      this.renta = 0
+    }
+  }
+
+  
 
 }
