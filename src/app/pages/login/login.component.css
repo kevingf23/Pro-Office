@@ -5,6 +5,12 @@ html {
   height: 100%;
 }
 
+.contenedor {
+  display: flex; /* Activar el modelo de caja flexible (flexbox) */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+}
+
 body {
   background-color: #eff3f4;
   position: relative;

@@ -4,12 +4,12 @@
 
 export const environment = {
   production: false,
-  HOST: 'http://localhost:8585',
-  KEYCLOACK: 'http://localhost:8080',
-  TOKEN_AUTH_USERNAME: 'user',
+  HOST: 'http://localhost:4200',
+  KEYCLOACK: 'http://localhost:9595',
+  TOKEN_AUTH_USERNAME: 'admin',
   TOKEN_AUTH_PASSWORD: 'admin',
   REFRESH_TOKEN: 'refresh_token',
-  CLIENT_ID: 'mediapp-backend',
+  CLIENT_ID: 'parcial-backend',
   TOKEN_NAME: 'access_token',
 };
 
