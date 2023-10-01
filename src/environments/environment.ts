@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   HOST: 'http://localhost:4200',
   KEYCLOACK: 'http://localhost:9595',
-  TOKEN_AUTH_USERNAME: 'admin',
+  TOKEN_AUTH_USERNAME: 'user',
   TOKEN_AUTH_PASSWORD: 'admin',
   REFRESH_TOKEN: 'refresh_token',
   CLIENT_ID: 'parcial-backend',
